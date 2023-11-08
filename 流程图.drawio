@@ -1,0 +1,718 @@
+<mxfile host="65bd71144e">
+    <diagram id="NIV2u-lUeq1tQmd26WKI" name="准备阶段">
+        <mxGraphModel dx="2626" dy="573" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1827" pageHeight="1569" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="经过babel编译成react可以调用的代码，&lt;span style=&quot;font-size: 12px; background-color: rgb(42, 37, 47);&quot;&gt;旧React.createElement()，&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(42, 37, 47);&quot;&gt;新:_jsx()&lt;br&gt;&lt;/span&gt;新的转译是有children，老的是没有的，老的转译第二个属性后面都是子元素" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0714" y="-1" relative="1" as="geometry">
+                        <mxPoint x="61" y="-11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="JSX" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-864" y="60" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="根据babel解析后的数据返回一个新的处理完毕的虚拟react元素对象&lt;br&gt;处理childrens数量，给元素对象添加$$typeof,type,ref,key,props属性" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9" vertex="1" connectable="0">
+                    <mxGeometry x="-0.075" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="babel" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-874" y="200" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;span style=&quot;&quot;&gt;React.createElement()&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="-874" y="360" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="_jsx(&quot;h1&quot;, {&lt;br&gt;  className: &quot;title&quot;,&lt;br&gt;  style: {&lt;br&gt;    color: &quot;red&quot;,&lt;br&gt;  },&lt;br&gt;  children: &quot;hello&quot;,&lt;br&gt;});" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-1064" y="110" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=classic;html=1;" parent="1" source="15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-914" y="270" as="sourcePoint"/>
+                        <mxPoint x="-824" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="&amp;lt;h1 className=&quot;title&quot; style={{ color: &quot;red&quot; }}&amp;gt;&lt;br/&gt;  hello&lt;br/&gt;&amp;lt;/h1&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-934" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;ReactDOM.createRoot&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-574" y="380" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;fontColor=#CCCCCC;" parent="1" source="22" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="22" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="22" target="30" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;render(jsx)&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-724" y="510" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=classic;html=1;fontColor=#CCCCCC;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="8" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-684" y="460" as="sourcePoint"/>
+                        <mxPoint x="-624" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=classic;html=1;fontColor=#CCCCCC;entryX=0.4;entryY=0.333;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="18" target="22" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-684" y="460" as="sourcePoint"/>
+                        <mxPoint x="-634" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="&lt;div style=&quot;color: rgb(240, 240, 240); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;根据id创建根节点，返回的是一个根节点实例&lt;/div&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; background-color: rgb(31, 31, 31);&quot;&gt;实例提供一个render方法，用于渲染调用&lt;/span&gt;&lt;span style=&quot;background-color: rgb(42, 37, 47); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bfont-family%3A%20Menlo%2C%20Monaco%2C%20%26amp%3Bquot%3BCourier%20New%26amp%3Bquot%3B%2C%20monospace%3B%20font-size%3A%2012px%3B%20background-color%3A%20rgb(31%2C%2031%2C%2031)%3B%26quot%3B%26gt%3B%E6%8F%90%E4%BE%9B%E4%B8%80%E4%B8%AArender%E6%96%B9%E6%B3%95%EF%BC%8C%E7%94%A8%E4%BA%8E%E6%B8%B2%E6%9F%93%E8%B0%83%E7%94%A8%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22edgeLabel%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3BfontColor%3D%23CCCCCC%3B%22%20vertex%3D%221%22%20connectable%3D%220%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22560.3470237838374%22%20y%3D%22460.1974676108339%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphMod&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#CCCCCC;" parent="25" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3439" y="-3" relative="1" as="geometry">
+                        <mxPoint x="92" y="23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="27" target="32" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;create Dom返回结果如果有新的DOM元素，&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;appendChild挂载触发生命周期componentDidMount&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="33" vertex="1" connectable="0">
+                    <mxGeometry x="-0.25" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-869" y="119" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;span style=&quot;&quot;&gt;传进去虚拟DOM，返回真实DOM&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="33" vertex="1" connectable="0">
+                    <mxGeometry x="0.0062" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;mount&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="-824" y="640" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="CKHRHEKmFjBJftQvQzu8-111" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="30" target="CKHRHEKmFjBJftQvQzu8-110">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;scheduleUpdate&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-624" y="640" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="32" target="35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(42, 37, 47);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%20style%3D%26quot%3Bbackground-color%3A%20rgb(31%2C%2031%2C%2031)%3B%20font-family%3A%20Menlo%2C%20Monaco%2C%20%26amp%3Bquot%3BCourier%20New%26amp%3Bquot%3B%2C%20monospace%3B%20font-size%3A%2012px%3B%20line-height%3A%2018px%3B%26quot%3B%26gt%3B%E5%A6%82%E6%9E%9C%E6%9C%89%E6%96%B0%E7%9A%84DOM%E5%85%83%E7%B4%A0%EF%BC%8CappendChild%E6%8C%82%E8%BD%BD%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%20style%3D%26quot%3Bbackground-color%3A%20rgb(31%2C%2031%2C%2031)%3B%20font-family%3A%20Menlo%2C%20Monaco%2C%20%26amp%3Bquot%3BCourier%20New%26amp%3Bquot%3B%2C%20monospace%3B%20font-size%3A%2012px%3B%20line-height%3A%2018px%3B%26quot%3B%26gt%3B%E8%A7%A6%E5%8F%91%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9FcomponentDidMount%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22edgeLabel%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3BfontColor%3D%23F0F0F0%3B%22%20vertex%3D%221%22%20connectable%3D%220%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22319%22%20y%3D%22730.0000000000002%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="36" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0375" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="77" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="32" target="76" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-1389" y="780" width="1250" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; background-color: rgb(31, 31, 31);&quot;&gt;ReactDOM&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;appendChild&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; background-color: rgb(42, 37, 47);&quot;&gt;虚拟DOM&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; background-color: rgb(31, 31, 31);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-1704" y="885" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;初始化，把虚拟DOM转换为真实的DOM&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-864" y="585" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;mountMemoComponent&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;fillColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="-1364" y="860" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;mountConsumerComponent&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-1204" y="860" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;mountProviderComponent&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-1024" y="860" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;mountForwardComponent&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-844" y="860" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="46" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="46" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="46" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="46" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="46" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="类组件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="66" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0923" y="-4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;document.createTextNode&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-664" y="860" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="组件" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-474" y="860" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;document.createElement&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-341" y="860" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;原生组件&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-286" y="820" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="文本" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-609" y="830" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="ref" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-794" y="830" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;provider&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-974" y="830" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;context&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-1154" y="830" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;memo&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-1324" y="830" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="其实就是判断不同类型组件做不同的处理，在前置做一些操作，把&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;props&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;children返回，或者返回本身&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-804" y="790" width="350" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;mountClassComponent&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-764" y="960" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;mountFunctionComponent&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#F0F0F0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-564" y="960" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="" style="endArrow=classic;html=1;fontColor=#F0F0F0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="67" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-534" y="920" as="sourcePoint"/>
+                        <mxPoint x="-584" y="790" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="函数组件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="68" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3806" y="4" relative="1" as="geometry">
+                        <mxPoint y="11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="函数组件直接调用函数获取return内容进行dom替换即可" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-504" y="1030" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="获取类组件的&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;defaultProps默认属性和props合并，获取&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;class组件实例修改指向，执行&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;类组件挂载的生命周期函数，&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;获取类组件return的子组件替换DOM，执行&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;组件挂载后（插入 DOM 树中）立即调用生命周期函数&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-934" y="1030" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="76" target="78" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="如果是就&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px;&quot;&gt;更新DOM属性&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="79" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1812" y="-4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="76" target="81" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="82" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0346" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="76" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;props为对象&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-804" y="1110" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="78" target="96" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;background-color: rgb(0, 204, 204);&quot;&gt;updateProps&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;strokeColor=#00CCCC;fillColor=#00CCCC;" parent="1" vertex="1">
+                    <mxGeometry x="-824" y="1280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="81" target="84" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;如果是独生子的话，把独生子的&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;虚拟DOM转换真实DOM插入到DOM节点上&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="85" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3521" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="81" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-464" y="1149.9999999999998" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; background-color: rgb(31, 31, 31);&quot;&gt;多个childre&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="88" vertex="1" connectable="0">
+                    <mxGeometry x="-0.15" y="2" relative="1" as="geometry">
+                        <mxPoint x="-4" y="-18" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="81" target="91" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;存在children&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-644" y="1110" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="mount" style="whiteSpace=wrap;html=1;fillColor=#a20025;rounded=0;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="-654" y="1280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="" style="edgeStyle=none;html=1;fontColor=#F0F0F0;" parent="1" source="91" target="98" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="循环子元素" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#F0F0F0;" parent="99" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1173" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="91" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;reconcileChildren&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-461" y="1120" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="&lt;h1 style=&quot;text-align: left;&quot;&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;更新DOM元素的属性&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;1.把新的属性全部赋上去&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;2.把老的属性在新的属性对象没有删除掉&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;3.添加新的事件&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;4.删除旧的属性&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="-1064" y="1265" width="230" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ae-TJg35ZrKYVgQNu8AI-109" value="" style="edgeStyle=none;html=1;fontColor=#CCCCCC;" edge="1" parent="1" source="96" target="Ae-TJg35ZrKYVgQNu8AI-108">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;addEvent&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-824" y="1400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#f0f0f0&quot;&gt;mount&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#a20025;rounded=0;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="-461" y="1260" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; font-size: 19px;&quot;&gt;&lt;span style=&quot;color: rgb(220, 220, 170); font-size: 19px;&quot;&gt;createDOM&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#F0F0F0;fontSize=19;" parent="1" vertex="1">
+                    <mxGeometry x="-894" y="750" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="准备阶段流畅图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=39;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="-1714" y="40" width="480" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qcb0d2YUtgQZ_n8KskIk-109" value="" style="edgeStyle=none;html=1;fontColor=#CCCCCC;" edge="1" parent="1" source="CKHRHEKmFjBJftQvQzu8-110" target="Qcb0d2YUtgQZ_n8KskIk-108">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CKHRHEKmFjBJftQvQzu8-110" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font style=&quot;background-color: rgb(255, 51, 51);&quot; color=&quot;#cccccc&quot;&gt;compareTwoVdom&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="-424" y="640" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="eWznz2WDbx8M4spWo2hp-108" value="提供调用，执行组件更新" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="-436" y="602" width="150" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qcb0d2YUtgQZ_n8KskIk-108" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 51, 51);&quot;&gt;DIFF&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="-224" y="640" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ae-TJg35ZrKYVgQNu8AI-108" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#dcdcaa&quot;&gt;事件合成&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-826" y="1494" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="ek3mbqRGnpOp7e9xtXZu" name="批量更新和事件合成">
+        <mxGraphModel dx="2989" dy="833" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1827" pageHeight="1569" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="cs8vm7mWjIOAks9_gRqU-2" value="批量合成" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="50" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-4" value="" style="edgeStyle=none;html=1;fontSize=20;fontColor=#F0F0F0;" parent="1" source="cs8vm7mWjIOAks9_gRqU-3" target="97Rv88B6lgZ7QgUHgf9u-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; background-color: rgb(31, 31, 31);&quot;&gt;pendingStates&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;存储state事件或者state对象，&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; background-color: rgb(31, 31, 31);&quot;&gt;callbacks存储&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;回调&lt;/font&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=17;fontColor=#F0F0F0;" parent="97Rv88B6lgZ7QgUHgf9u-4" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0056" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="cs8vm7mWjIOAks9_gRqU-3" value="&lt;font color=&quot;#ffff33&quot; style=&quot;font-size: 17px;&quot;&gt;this.setState&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="270" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-2" value="&lt;font color=&quot;#ffff33&quot;&gt;this.setState(() =&amp;gt; ({}), () =&amp;gt; {})&lt;br&gt;this.setState({}, () =&amp;gt; {})&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="200" width="290" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-17" value="" style="edgeStyle=none;html=1;fontSize=13;fontColor=#FFFF33;" parent="1" source="97Rv88B6lgZ7QgUHgf9u-3" target="97Rv88B6lgZ7QgUHgf9u-16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-3" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;addState方法&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-10" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#00cc00&quot;&gt;updateQueue&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=15;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry y="490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-11" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffff33&quot;&gt;Component&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=15;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry y="220" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-12" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;Updater&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=15;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-13" value="&lt;font color=&quot;#ffff33&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;类组件的实例，提供开发者继承&lt;/font&gt;&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; background-color: rgb(31, 31, 31);&quot;&gt;class ClassComponent extends&amp;nbsp;Component&lt;/span&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffff33&quot;&gt;静态属性：isReactComponent类组件标,defaultProps默认props&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;fontColor=#00CC00;" parent="1" vertex="1">
+                    <mxGeometry x="-170" y="170" width="480" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-14" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;类组件的更新实例，用于存储，调用，获取事件&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); line-height: 18px; font-size: 12px; font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;pendingStates：用来存放更新状态，新的数据或者事件&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;callbacks：state更新回调&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontColor=#FFFF33;" parent="1" vertex="1">
+                    <mxGeometry x="-105" y="280" width="330" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-15" value="&lt;font color=&quot;#00cc00&quot;&gt;控制更新队列,&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px;&quot;&gt;isBatchingUpdate为true代表批量异步&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#00cc00&quot;&gt;updaters批量执行的事件&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontColor=#80FF00;" parent="1" vertex="1">
+                    <mxGeometry x="-105" y="445" width="330" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-19" value="" style="edgeStyle=none;html=1;fontSize=13;fontColor=#00CC00;" parent="1" source="97Rv88B6lgZ7QgUHgf9u-16" target="97Rv88B6lgZ7QgUHgf9u-18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-16" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;emitUpdate&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontColor=#FF3333;fillColor=#18141D;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-21" value="否" style="edgeStyle=none;html=1;fontSize=16;fontColor=#F0F0F0;" parent="1" source="97Rv88B6lgZ7QgUHgf9u-18" target="97Rv88B6lgZ7QgUHgf9u-20" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-23" value="" style="edgeStyle=none;html=1;fontSize=16;fontColor=#F0F0F0;" parent="1" source="97Rv88B6lgZ7QgUHgf9u-18" target="97Rv88B6lgZ7QgUHgf9u-22" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-24" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;fontColor=#F0F0F0;" parent="97Rv88B6lgZ7QgUHgf9u-23" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-18" value="&lt;font color=&quot;#f0f0f0&quot; style=&quot;font-size: 16px;&quot;&gt;批量更新&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="680" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-28" value="" style="edgeStyle=none;html=1;fontSize=13;fontColor=#F0F0F0;" parent="1" source="97Rv88B6lgZ7QgUHgf9u-20" target="97Rv88B6lgZ7QgUHgf9u-27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ldF4iodsywpkzL7D-R_N-1" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;调用getDerivedStateFromProps生命周期，可以修改props&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;获取当前已经渲染的组件虚拟DOM和当前组件render获取要渲染的虚拟DOM&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;调用compareTwoVdom进行diff,更新完毕执行flushCallbacks，state的回调&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;执行componentDidUpdate生命周期&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontColor=#00CC00;" parent="97Rv88B6lgZ7QgUHgf9u-28" vertex="1" connectable="0">
+                    <mxGeometry x="-0.175" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-20" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#f0f0f0&quot;&gt;shouldUpdate&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="690" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-22" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#00cc00&quot;&gt;updaters&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="690" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-25" value="&lt;font color=&quot;#00cc00&quot;&gt;存储，等待事件触发执行更新队列&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="665" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-26" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; line-height: 18px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;替换当前更新事件实例的props和state并且触发生命周期钩子&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;执行&lt;/font&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;UNSAFE_componentWillUpdate，&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;shouldComponentUpdate生命周期&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;font-size: 12px; line-height: 18px;&quot;&gt;shouldComponentUpdate返回false代表不更新&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#F0F0F0;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="620" width="450" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ldF4iodsywpkzL7D-R_N-4" value="" style="edgeStyle=none;html=1;fontSize=13;fontColor=#00CC00;" parent="1" source="97Rv88B6lgZ7QgUHgf9u-27" target="ldF4iodsywpkzL7D-R_N-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97Rv88B6lgZ7QgUHgf9u-27" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#00cc00&quot;&gt;forceUpdate&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontColor=#FF3333;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="860" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="dXqwDFLphFW8Rw4sVT8j-3" value="" style="edgeStyle=none;html=1;fontColor=#CCCCCC;" edge="1" parent="1" source="ldF4iodsywpkzL7D-R_N-3" target="dXqwDFLphFW8Rw4sVT8j-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ldF4iodsywpkzL7D-R_N-3" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font style=&quot;&quot; color=&quot;#f0f0f0&quot;&gt;compareTwoVdom&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fillColor=#FF0000;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="1000" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DbKp-_q1tWd1DilARxzo-3" value="" style="edgeStyle=none;html=1;" parent="1" source="DbKp-_q1tWd1DilARxzo-1" target="DbKp-_q1tWd1DilARxzo-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="wfuA3DSTnt0W3ZqCdn-1-1" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;给DOM元素添加事件处理函数&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;把&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;dispatchEvent&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;事件挂载到document或者dev#root中&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;这种操作叫做事件合成&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DbKp-_q1tWd1DilARxzo-3" vertex="1" connectable="0">
+                    <mxGeometry x="0.025" y="2" relative="1" as="geometry">
+                        <mxPoint y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="DbKp-_q1tWd1DilARxzo-1" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;background-color: rgb(0, 204, 204);&quot;&gt;updateProps&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;strokeColor=#00CCCC;fillColor=#00CCCC;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="DbKp-_q1tWd1DilARxzo-2" value="addEvent" style="whiteSpace=wrap;html=1;fillColor=#18141D;strokeColor=#4D4D4D;rounded=0;gradientColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="480" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="wfuA3DSTnt0W3ZqCdn-1-5" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#CCCCCC;" parent="1" source="wfuA3DSTnt0W3ZqCdn-1-2" target="97Rv88B6lgZ7QgUHgf9u-22" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="wfuA3DSTnt0W3ZqCdn-1-6" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;updateQueue.isBatchingUpdate = true;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;在这里通知需要批量更新&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;最后触发updateQueue&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;batchUpdate，进行批量事件的执行&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#CCCCCC;" parent="wfuA3DSTnt0W3ZqCdn-1-5" vertex="1" connectable="0">
+                    <mxGeometry x="0.0283" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wfuA3DSTnt0W3ZqCdn-1-2" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;dispatchEvent&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#00CCCC;strokeColor=#4D4D4D;fontColor=#CCCCCC;fillColor=#18141D;gradientColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="wfuA3DSTnt0W3ZqCdn-1-4" value="点击事件触发" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CCCCCC;" parent="1" vertex="1">
+                    <mxGeometry x="1090" y="650" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="dXqwDFLphFW8Rw4sVT8j-2" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;font style=&quot;&quot; color=&quot;#f0f0f0&quot;&gt;DIFF&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fillColor=#FF0000;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="1140" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="0PLA-hul1tIowUER5Yaq" name="DOM-DIFF算法">
+        <mxGraphModel dx="2556" dy="1832" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1827" pageHeight="1569" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-13" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="DlYJh3WECWt9BiZQODJN-2" target="Kc2LJbomWfXxfqNvie1r-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="120" y="95"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-14" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="DlYJh3WECWt9BiZQODJN-2" target="Kc2LJbomWfXxfqNvie1r-2">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="120" y="205"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-15" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="DlYJh3WECWt9BiZQODJN-2" target="Kc2LJbomWfXxfqNvie1r-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-16" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="DlYJh3WECWt9BiZQODJN-2" target="Kc2LJbomWfXxfqNvie1r-4">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="120" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-17" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="DlYJh3WECWt9BiZQODJN-2" target="Kc2LJbomWfXxfqNvie1r-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="120" y="530"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="DlYJh3WECWt9BiZQODJN-2" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#cc0066&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;fontColor=#CCCCCC;fillColor=default;strokeColor=#CC0066;" vertex="1" parent="1">
+                    <mxGeometry y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-18" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-1" target="Kc2LJbomWfXxfqNvie1r-8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-1" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;!oldVdom &amp;amp;&amp;amp; !newVdom&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#CCCCCC;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="50" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-19" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-2" target="Kc2LJbomWfXxfqNvie1r-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-20" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-2" target="Kc2LJbomWfXxfqNvie1r-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-21" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-2" target="Kc2LJbomWfXxfqNvie1r-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-22" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-2" target="Kc2LJbomWfXxfqNvie1r-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-23" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-2" target="Kc2LJbomWfXxfqNvie1r-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-25" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-2" target="Kc2LJbomWfXxfqNvie1r-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-27" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-2" target="Kc2LJbomWfXxfqNvie1r-26">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="480" y="150"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-2" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;oldVdom &amp;amp;&amp;amp; !newVdom&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#CCCCCC;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="160" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-29" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-3" target="Kc2LJbomWfXxfqNvie1r-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-31" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-3" target="Kc2LJbomWfXxfqNvie1r-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-32" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-3" target="Kc2LJbomWfXxfqNvie1r-30">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-3" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;!oldVdom &amp;amp;&amp;amp; newVdom&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#CCCCCC;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="270" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-5" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-4" target="Rrdxh3Ma99agGMW7qnMV-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-4" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;oldVdom &amp;amp;&amp;amp; newVdom &amp;amp;&amp;amp; oldVdom.type !== newVdom.type&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#CCCCCC;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="380" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-8" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-7" target="Kc2LJbomWfXxfqNvie1r-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Kc2LJbomWfXxfqNvie1r-7" target="Rrdxh3Ma99agGMW7qnMV-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-7" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;oldVdom &amp;amp;&amp;amp; newVdom &amp;amp;&amp;amp; oldVdom.type&amp;nbsp;=== newVdom.type&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#CCCCCC;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="500" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-8" value="&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(31, 31, 31); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;老的虚拟DOM和新的虚拟DOM都是null或undefined，什么都不用做&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CCCCCC;labelBackgroundColor=#FF3333;" vertex="1" parent="1">
+                    <mxGeometry x="105" y="20" width="390" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-9" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;老的虚拟DOM有值，新的没有，说明是销毁动作&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="145" y="130" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-10" value="&lt;font color=&quot;#ffffff&quot;&gt;新的虚拟DOM有值，老的没有，说明是初始化动作&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="240" width="290" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-11" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;说老的有，新的也有，但是类型不同，&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;则也不能复用老的真实DOM节点&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="165" y="330" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-12" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;如果有老的虚拟DOM，也有新的虚拟DOM，&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;并且类型是一样的，就可以复用老的真实DOM&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="165" y="450" width="260" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-26" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;unMountVdom&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#CCCCCC;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="90" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-28" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;ref.current = null释放ref内存&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;执行componentWillUnmount生命周期&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;findDOM(vdom).remove()获取真实DOM并且卸载&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;循环children，调用unMountVdom&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="530" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="Kc2LJbomWfXxfqNvie1r-30" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;createDOM&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-3" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;background-color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;font-family: Helvetica;&quot;&gt;走准备阶段的&lt;/span&gt;createDOM方法并且判断是否&lt;br&gt;还有兄弟元素判断追加还是插入&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;background-color: rgb(0, 0, 0);&quot;&gt;调用生命周期&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31);&quot;&gt;componentDidMount函数&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="160" width="260" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-7" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-4" target="Kc2LJbomWfXxfqNvie1r-30">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="720" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-4" value="&lt;span style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; background-color: rgb(31, 31, 31);&quot;&gt;unMountVdom&lt;/span&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="380" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-6" value="节点不能复用，所以需要卸载后重新创建插入" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="340" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-5" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-17">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="1030"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-6" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;fontColor=#FFFFFF;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="970" y="880" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="840" y="880"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-4" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#CC0066;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-15">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="760"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-5" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#CC0066;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-14">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="650"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-6" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.031;entryY=0.662;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-7" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-12">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-8" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-18">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="190"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-9" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-9" target="Rrdxh3Ma99agGMW7qnMV-11">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="840" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-9" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;updateElement&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FF3333;strokeColor=#FFFFFF;fontColor=#CCCCCC;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="500" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-11" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;updateMemoComponent&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="260" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-12" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;updateProviderComponent&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="380" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-13" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;updateContextComponent&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="965" y="490" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-14" target="GL-ADv2hDy5ypT42ilO4-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-14" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;updateClassComponent&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="620" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-3" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-15" target="KsY9ssD7oX1rSLymOM9w-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-15" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;updateFunctionComponent&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="730" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-16" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;文本节点&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="850" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zs6QL16m-9IQktTgoJh6-4" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" source="Rrdxh3Ma99agGMW7qnMV-17" target="zs6QL16m-9IQktTgoJh6-3">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1040" y="1080"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-17" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;原生组件&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="1000" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rrdxh3Ma99agGMW7qnMV-18" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;updateForwardComponent&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zs6QL16m-9IQktTgoJh6-3" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;updateChildren&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="1160" y="1050" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-3" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" edge="1" parent="1" target="GL-ADv2hDy5ypT42ilO4-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1040" y="995" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1040" y="980"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-1" value="&lt;div style=&quot;font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;updateProps进行元素属性替换&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;strokeColor=#00CCCC;fillColor=#00CCCC;" vertex="1" parent="1">
+                    <mxGeometry x="1160" y="950" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-4" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;currentDOM.textContent = newVdom.props&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;进行文本内容替换&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="890" y="800" width="300" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-7" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;&lt;div style=&quot;&quot;&gt;类组件，复用老的类组件的实例&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;调用UNSAFE_componentWillReceiveProps生命周期&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="895" y="560" width="330" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-8" value="函数组件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1010" y="700" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-9" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;emitUpdate&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#80FF00;fontColor=#FFFFFF;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="1240" y="620" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GL-ADv2hDy5ypT42ilO4-11" value="触发函数更新事件，进行props更新" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1225" y="580" width="210" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-2" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;font color=&quot;#cc0066&quot;&gt;compareTwoVdom&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;strokeColor=#CC0066;fontColor=#80FF00;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="1240" y="730" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-10" value="ref组件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1010" y="120" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-11" value="memo组件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="230" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-12" value="provider组件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="995" y="350" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="KsY9ssD7oX1rSLymOM9w-13" value="context组件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="995" y="460" width="90" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
